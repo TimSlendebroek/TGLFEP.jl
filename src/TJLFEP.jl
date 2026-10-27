@@ -14,7 +14,6 @@ using Printf
 using StaticArrays
 using TJLF
 using TJLF: InputTJLF  # consolidated single input type (re-exported below)
-using Plots
 import SimpleNonlinearSolve   # derivative-free bracketing roots (ITP/Brent) for the marginal-factor 1D root
 import NLopt                  # derivative-free (ky,w) global/local search for the :nlopt solver
 

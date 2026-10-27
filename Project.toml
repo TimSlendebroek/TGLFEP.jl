@@ -15,7 +15,6 @@ LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 LinearMaps = "7a12625a-238d-50fd-b39a-03d52299707e"
 NLopt = "76087f3c-5699-56af-9a33-bf431cd00edd"
 PackageCompiler = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
-Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 Serialization = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
@@ -29,10 +28,12 @@ TJLF = "12ecd31c-256b-4db5-a799-cd5afeb0bd7d"
 [weakdeps]
 GACODE = "bb074124-7a58-47ce-bd41-6b7098184f23"
 IMAS = "13ead8c1-b7d1-41bb-a6d0-5b8b65ed587a"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 TurbulentTransport = "9bf5e8f4-5746-4003-bc69-ef83265c10ca"
 
 [extensions]
 TJLFEPIMASExt = ["GACODE", "IMAS", "TurbulentTransport"]
+TJLFEPPlotsExt = "Plots"
 
 [compat]
 Arpack = "0.5.4"
