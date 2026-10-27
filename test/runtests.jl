@@ -35,4 +35,7 @@ end
     # End-to-end regression against the Fortran TGLF-EP reference (one radius).
     include("runtests_regression_nb6.jl")
     include("runtests_regression_spectrum.jl")
+
+    # Plots extension (last: it loads Plots into the session)
+    include("unit_plots.jl")
 end

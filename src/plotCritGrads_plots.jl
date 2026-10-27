@@ -1,5 +1,5 @@
 # Included by ext/TJLFEPPlotsExt.jl
-function make_crit_grad_plots(SorF::String="neither"; dir::String="", scale::String="identity", code::String="julia")
+function make_crit_grad_plots(SorF::String="neither"; dir::String="", scale::String="identity", code::String="auto")
     if SorF == "STRUCT"
         dir  = "structOutputs"
         press_name = "STRUCT_alpha_dpdr_crit.png"

@@ -66,7 +66,7 @@ function write_crit_grad(path::AbstractString, header::AbstractString, values::A
 end
 
 """
-    make_crit_grad_plots(SorF="neither"; dir="", scale="identity", code="julia")
+    make_crit_grad_plots(SorF="neither"; dir="", scale="identity", code="auto")
 
 Plot the critical EP pressure- and density-gradient profiles
 (`alpha_dpdr_crit`, `alpha_dndr_crit`) written by a TJLFEP scan, saving
@@ -75,6 +75,7 @@ Plot the critical EP pressure- and density-gradient profiles
 `SorF` selects the input/output directory and filename prefix (`"STRUCT"` →
 `structOutputs/`, `"FILE"` → `fileOutputs/`, anything else → `dir`/unprefixed).
 `scale` sets the y-axis scale and `code` selects the input file format
-(`"julia"` array literal vs. Fortran one-value-per-line).
+(`"auto"` detects it; `"julia"` array literal vs. `"fortran"` one-value-per-line, which is what
+[`write_crit_grad`](@ref) writes).
 """
 function make_crit_grad_plots end  # implemented in ext/TJLFEPPlotsExt.jl (needs `using Plots`)
