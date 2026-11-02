@@ -1,3 +1,10 @@
+> [!NOTE]
+> **About this fork.** This TJLFEP fork is part of [FUSE_Design](https://github.com/TimSlendebroek/FUSE_Design.jl), a public, stable version of the FUSE
+> stack focused on **fusion power-plant design** rather than the time-dependent, digital-twin direction of upstream.
+> `master` is the design line, release **2.0.14+design.1** (upstream v2.0.14, plots in a Plots extension;
+> [CHANGELOG.md](CHANGELOG.md)); upstream's own master is kept on the `upstream-master` branch.
+> To install the whole stack, see [Installing the design stack](https://github.com/TimSlendebroek/FUSE_Design.jl#installing-the-design-stack).
+
 [![codecov](https://codecov.io/github/projecttorreypines/tjlfep.jl/graph/badge.svg?token=WIeugjkmVB)](https://codecov.io/github/projecttorreypines/tjlfep.jl)
 ![Docs](https://github.com/ProjectTorreyPines/TJLFEP.jl/actions/workflows/make_docs.yml/badge.svg)
 
